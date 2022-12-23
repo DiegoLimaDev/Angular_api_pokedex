@@ -1,0 +1,10 @@
+<div *ngIf="pokemonData !== []">
+  <img
+    [src]="this.apiService.getPokemonImg(pokemonData?.id)"
+    height="200"
+    width="200"
+  />
+  <p>{{ pokemonData?.name }}</p>
+  <p>{{ pokemonData?.description }}</p>
+  <p>{{ pokemonData?.type_1_id }}</p>
+</div>

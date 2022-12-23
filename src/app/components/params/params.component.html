@@ -1,0 +1,8 @@
+<p>params works!</p>
+<div *ngFor="let id of ids">
+  <p>{{ id.id }}</p>
+  <p>{{ id.name }}</p>
+  <button type="button" (click)="this.router.navigate(['seeData/:id.id'])">
+    ver dados
+  </button>
+</div>
